@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DashEnd Supply — Houston B2B Supply Solutions | Air Filters, Electronics, Cleaning</title>
+  
+  <!-- Modern Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      /* Light Theme */
+      --primary: #0066FF;
+      --primary-dark: #0052D4;
+      --secondary: #10B981;
+      --secondary-dark: #059669;
+      --accent: #8B5CF6;
+      --dark: #0F172A;
+      --dark-light: #1E293B;
+      --light: #FFFFFF;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-300: #CBD5E1;
+      --gray-400: #94A3B8;
+      --gray-500: #64748B;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1E293B;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --radius-sm: 8px;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dark {
+      --primary: #3B82F6;
+      --primary-dark: #2563EB;
+      --secondary: #10B981;
+      --secondary-dark: #059669;
+      --accent: #8B5CF6;
+      --dark: #F1F5F9;
+      --dark-light: #E2E8F0;
+      --light: #0F172A;
+      --gray-50: #1E293B;
+      --gray-100: #1E293B;
+      --gray-200: #334155;
+      --gray-300: #475569;
+      --gray-400: #64748B;
+      --gray-500: #94A3B8;
+      --gray-600: #CBD5E1;
+      --gray-700: #E2E8F0;
+      --gray-800: #F1F5F9;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      transition: var(--transition);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    /* Header & Navigation - UPDATED: Removed logo image */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      transition: var(--transition);
+    }
+
+    .dark header {
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 15px;
+      position: relative;
+      padding: 8px 0;
+      transition: var(--transition);
+    }
+
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover:after,
+    .nav-links a.active:after {
+      width: 100%;
+    }
+
+    .nav-links a.active {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .theme-toggle {
+      background: var(--gray-100);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      color: var(--dark);
+    }
+
+    .theme-toggle:hover {
+      background: var(--gray-200);
+      transform: rotate(15deg);
+    }
+
+    .dark .theme-toggle {
+      background: var(--gray-800);
+      color: var(--light);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: var(--dark);
+      cursor: pointer;
+    }
+
+    .dark .mobile-menu-btn {
+      color: var(--light);
+    }
+
+    /* Hero Section - UPDATED: Changed from strawberry to robot with lightbulb */
+    .hero {
+      padding: 140px 0 100px;
+      position: relative;
+      overflow: hidden;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(rgba(0, 102, 255, 0.85), rgba(139, 92, 246, 0.8)), 
+                        url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: -2;
+      animation: heroZoom 20s infinite alternate;
+      filter: brightness(1.1) contrast(1.1);
+    }
+
+    @keyframes heroZoom {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    .hero-bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.3) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 24px;
+      color: white;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-subtitle {
+      font-size: 22px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 48px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 60px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: var(--transition);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .stat-number {
+      font-size: 48px;
+      font-weight: 900;
+      color: white;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .stat-label {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 40px;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      box-shadow: 0 4px 20px rgba(0, 102, 255, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 30px rgba(0, 102, 255, 0.5);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    /* Houston Area Section */
+    .houston-section {
+      margin-top: 80px;
+      padding: 60px 40px;
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                  url('https://images.unsplash.com/photo-1531214159280-079b95d26139?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(0, 102, 255, 0.1);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dark .houston-section {
+      background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), 
+                  url('https://images.unsplash.com/photo-1531214159280-079b95d26139?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    }
+
+    .houston-section h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: var(--dark);
+      position: relative;
+      z-index: 2;
+    }
+
+    .dark .houston-section h3 {
+      color: var(--light);
+    }
+
+    .houston-section p {
+      color: var(--gray-600);
+      margin-bottom: 32px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .dark .houston-section p {
+      color: var(--gray-400);
+    }
+
+    .area-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 30px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .area-tag {
+      padding: 12px 24px;
+      background: var(--light);
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 15px;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .dark .area-tag {
+      background: var(--gray-800);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .area-tag:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Features Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .feature-card {
+      background: var(--light);
+      border-radius: var(--radius-xl);
+      padding: 48px 32px;
+      border: 1px solid var(--gray-200);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .dark .feature-card {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-800);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 32px;
+      color: white;
+      font-size: 32px;
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    }
+
+    .feature-card h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .dark .feature-card h3 {
+      color: var(--light);
+    }
+
+    .feature-card p {
+      color: var(--gray-600);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .dark .feature-card p {
+      color: var(--gray-400);
+    }
+
+    /* Product Categories - UPDATED with corrected images */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .category-card {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+      height: 400px;
+      transition: var(--transition);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .category-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .category-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    }
+
+    .category-card:hover .category-image {
+      transform: scale(1.1);
+      filter: brightness(1.15) contrast(1.1) saturate(1.2);
+    }
+
+    .category-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+      padding: 48px 32px 32px;
+      color: white;
+      z-index: 2;
+    }
+
+    .category-overlay h3 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: white;
+    }
+
+    .category-overlay p {
+      opacity: 0.9;
+      margin-bottom: 28px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* Category-specific background images - CORRECTED */
+    /* 1. Air Filters - UPDATED to bright and clean air filters picture */
+    .category-card:nth-child(1) .category-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                       url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    }
+
+    /* 2. Electronic Components - Kept the perfect image */
+    .category-card:nth-child(2) .category-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                       url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    }
+
+    /* 3. Cleaning & Safety - UPDATED to bright cleaning supplies picture */
+    .category-card:nth-child(3) .category-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                       url('https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    }
+
+    /* Texas Business Focus */
+    .texas-business {
+      background: linear-gradient(rgba(0, 102, 255, 0.9), rgba(139, 92, 246, 0.9)), 
+                  url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 60px;
+      border-radius: var(--radius-xl);
+      text-align: center;
+      margin-top: 100px;
+      position: relative;
+      overflow: hidden;
+      filter: brightness(1.05);
+    }
+
+    .texas-business::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0,100 C250,50 750,50 1000,100 L1000,0 L0,0 Z" fill="rgba(255,255,255,0.1)"/></svg>') repeat-x;
+      background-size: 1000px 100px;
+      opacity: 0.5;
+      animation: wave 20s linear infinite;
+    }
+
+    @keyframes wave {
+      0% { background-position-x: 0; }
+      100% { background-position-x: 1000px; }
+    }
+
+    .texas-business h2 {
+      color: white;
+      margin-bottom: 24px;
+      font-size: 56px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .texas-business p {
+      opacity: 0.95;
+      margin-bottom: 40px;
+      font-size: 22px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .business-types {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 60px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .business-type {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 40px 32px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: var(--transition);
+    }
+
+    .business-type:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .business-type i {
+      font-size: 40px;
+      margin-bottom: 24px;
+      color: #FFD700;
+    }
+
+    .business-type h4 {
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .business-type p {
+      opacity: 0.9;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .cta-box {
+      background: linear-gradient(rgba(0, 102, 255, 0.9), rgba(139, 92, 246, 0.9)), 
+                  url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 60px;
+      border-radius: var(--radius-xl);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      filter: brightness(1.05);
+    }
+
+    .cta-box h2 {
+      color: white;
+      margin-bottom: 24px;
+      font-size: 48px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      opacity: 0.95;
+      margin-bottom: 40px;
+      font-size: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--gray-50);
+      padding: 80px 0 40px;
+      margin-top: 100px;
+    }
+
+    .dark footer {
+      background: var(--gray-800);
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer-logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      font-size: 28px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .footer-description {
+      color: var(--gray-600);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .dark .footer-description {
+      color: var(--gray-400);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      background: var(--gray-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-700);
+      transition: var(--transition);
+    }
+
+    .dark .social-link {
+      background: var(--gray-700);
+      color: var(--gray-300);
+    }
+
+    .social-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px) rotate(5deg);
+    }
+
+    .footer-heading {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--dark);
+    }
+
+    .dark .footer-heading {
+      color: var(--light);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .footer-links a {
+      color: var(--gray-600);
+      transition: var(--transition);
+      font-size: 15px;
+    }
+
+    .dark .footer-links a {
+      color: var(--gray-400);
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+      padding-left: 8px;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      padding-top: 40px;
+      border-top: 1px solid var(--gray-200);
+      text-align: center;
+      color: var(--gray-600);
+      font-size: 14px;
+    }
+
+    .dark .footer-bottom {
+      border-top: 1px solid var(--gray-700);
+      color: var(--gray-400);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .hero h1 {
+        font-size: 56px;
+      }
+      
+      .texas-business h2 {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero h1 {
+        font-size: 48px;
+      }
+      
+      .features-grid,
+      .categories-grid,
+      .hero-stats,
+      .business-types,
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .texas-business {
+        padding: 80px 40px;
+      }
+      
+      .texas-business h2 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--light);
+        flex-direction: column;
+        padding: 32px;
+        gap: 24px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        box-shadow: var(--shadow-xl);
+        border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        z-index: 1000;
+      }
+      
+      .dark .nav-links {
+        background: var(--dark-light);
+      }
+      
+      .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .hero {
+        padding: 120px 0 80px;
+        min-height: 80vh;
+      }
+      
+      .hero h1 {
+        font-size: 36px;
+      }
+      
+      .hero-subtitle {
+        font-size: 18px;
+      }
+      
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      
+      .features-grid,
+      .categories-grid,
+      .hero-stats,
+      .business-types {
+        grid-template-columns: 1fr;
+      }
+      
+      .texas-business {
+        padding: 60px 24px;
+        margin-top: 60px;
+      }
+      
+      .texas-business h2 {
+        font-size: 36px;
+      }
+      
+      .texas-business p {
+        font-size: 18px;
+      }
+      
+      .cta-box {
+        padding: 60px 24px;
+      }
+      
+      .cta-box h2 {
+        font-size: 36px;
+      }
+      
+      .cta-box p {
+        font-size: 18px;
+      }
+      
+      .houston-section {
+        padding: 40px 24px;
+        margin-top: 60px;
+      }
+      
+      .houston-section h3 {
+        font-size: 28px;
+      }
+      
+      .category-card {
+        height: 350px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 0 20px;
+      }
+      
+      .section {
+        padding: 60px 0;
+      }
+      
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .hero h1 {
+        font-size: 32px;
+      }
+      
+      .hero-subtitle {
+        font-size: 16px;
+      }
+      
+      .stat-card {
+        padding: 24px;
+      }
+      
+      .stat-number {
+        font-size: 36px;
+      }
+      
+      .feature-card {
+        padding: 40px 24px;
+      }
+      
+      .category-overlay {
+        padding: 40px 24px 24px;
+      }
+      
+      .category-overlay h3 {
+        font-size: 24px;
+      }
+      
+      .footer-links a {
+        font-size: 14px;
+      }
+      
+      .area-tag {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 70vh;
+      }
+      
+      .hero h1 {
+        font-size: 28px;
+      }
+      
+      .hero-stats {
+        gap: 16px;
+      }
+      
+      .stat-card {
+        padding: 20px;
+      }
+      
+      .stat-number {
+        font-size: 32px;
+      }
+      
+      .btn {
+        padding: 16px 32px;
+        font-size: 15px;
+      }
+      
+      .texas-business h2 {
+        font-size: 32px;
+      }
+      
+      .texas-business p {
+        font-size: 16px;
+      }
+      
+      .business-type {
+        padding: 32px 24px;
+      }
+      
+      .business-type h4 {
+        font-size: 20px;
+      }
+      
+      .cta-box h2 {
+        font-size: 32px;
+      }
+      
+      .cta-box p {
+        font-size: 16px;
+      }
+    }
+
+    /* Print Styles */
+    @media print {
+      .hero-bg,
+      .texas-business,
+      .cta-box {
+        background: none !important;
+      }
+      
+      .hero h1 {
+        color: var(--dark) !important;
+      }
+      
+      .hero-subtitle {
+        color: var(--gray-600) !important;
+      }
+      
+      .btn {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header - UPDATED: Removed logo image -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          DASHEND
+        </a>
+        
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+          <a href="catalog.html"><i class="fas fa-boxes"></i> Catalog</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+          <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          <div class="nav-actions">
+            <a href="contact.html" class="btn btn-primary">Get Quote</a>
+            <button class="theme-toggle" id="themeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Houston's B2B Supply Partner</h1>
+        <p class="hero-subtitle">
+          Same-day delivery of air filters, electronic components, and cleaning supplies 
+          for businesses across Houston, Cypress, Katy, and Sugar Land.
+        </p>
+        <div class="btn-group">
+          <a href="catalog.html" class="btn btn-primary">
+            <i class="fas fa-shopping-cart"></i> Browse Catalog
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            <i class="fas fa-comment-dots"></i> Get Custom Quote
+          </a>
+        </div>
+        
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">24h</div>
+            <div class="stat-label">Quote Response Time</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">Same-Day</div>
+            <div class="stat-label">Houston Delivery</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">On-Time Delivery Rate</div>
+          </div>
+        </div>
+
+        <!-- Houston Area Focus -->
+        <div class="houston-section">
+          <h3>Serving Greater Houston Area</h3>
+          <p>Fast, reliable delivery to businesses across Houston and surrounding communities</p>
+          <div class="area-tags">
+            <span class="area-tag">Houston</span>
+            <span class="area-tag">Cypress</span>
+            <span class="area-tag">Katy</span>
+            <span class="area-tag">Sugar Land</span>
+            <span class="area-tag">The Woodlands</span>
+            <span class="area-tag">Spring</span>
+            <span class="area-tag">Pearland</span>
+            <span class="area-tag">Pasadena</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="font-size: 42px; margin-bottom: 16px; text-align: center; color: var(--dark);">Simple Texas-Sized Service</h2>
+        <p class="hero-subtitle" style="color: var(--gray-600); text-align: center;">Streamlined procurement for Houston businesses</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-list-check"></i>
+          </div>
+          <h3>1. Share Your List</h3>
+          <p>Email, WhatsApp, or upload your product list. We handle Excel, CSV, or simple typed lists.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>2. We Source Fast</h3>
+          <p>Our Houston-based team checks availability, lead times, and local inventory within hours.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <h3>3. Local Delivery</h3>
+          <p>Same-day Houston delivery or next-day to suburbs. Clear ETAs and tracking provided.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="section" style="background: var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="font-size: 42px; margin-bottom: 16px; text-align: center; color: var(--dark);">Texas Business Essentials</h2>
+        <p class="hero-subtitle" style="color: var(--gray-600); text-align: center;">Core supplies for Houston-area businesses</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-image"></div>
+          <div class="category-overlay">
+            <h3>Air Filtration Systems</h3>
+            <p>MERV-rated filters for Texas HVAC systems. Commercial and residential sizes available.</p>
+            <!-- CORREGIDO: Quitado #air -->
+            <a href="catalog.html" class="btn btn-primary">View Products</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-image"></div>
+          <div class="category-overlay">
+            <h3>Electronic Components</h3>
+            <p>ICs, connectors, tools, and cables for maintenance and manufacturing teams.</p>
+            <!-- CORREGIDO: Quitado #electronics -->
+            <a href="catalog.html" class="btn btn-primary">View Products</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-image"></div>
+          <div class="category-overlay">
+            <h3>Cleaning & Safety</h3>
+            <p>Disinfectants, PPE, wipes, and supplies for Texas facilities and businesses.</p>
+            <!-- CORREGIDO: Quitado #cleaning -->
+            <a href="catalog.html" class="btn btn-primary">View Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Texas Business Focus -->
+  <section class="section">
+    <div class="container">
+      <div class="texas-business">
+        <h2>Built for Texas Businesses</h2>
+        <p>We understand the unique needs of Houston-area companies. Fast, reliable, and Texas-friendly service.</p>
+        
+        <div class="business-types">
+          <div class="business-type">
+            <i class="fas fa-school"></i>
+            <h4>Churches & Daycares</h4>
+            <p>Safe cleaning supplies, HVAC filters, and AV basics</p>
+          </div>
+          
+          <div class="business-type">
+            <i class="fas fa-building"></i>
+            <h4>Office Buildings</h4>
+            <p>Maintenance supplies, air filters, and electronics</p>
+          </div>
+          
+          <div class="business-type">
+            <i class="fas fa-industry"></i>
+            <h4>Manufacturing</h4>
+            <p>Electronic components, safety gear, and cleaning</p>
+          </div>
+        </div>
+        
+        <div style="margin-top: 40px;">
+          <a href="contact.html" class="btn" style="background: white; color: var(--primary); padding: 18px 48px; font-size: 18px;">
+            <i class="fas fa-handshake"></i> Get Houston Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to Streamline Your Supply Chain?</h2>
+        <p>
+          Join hundreds of Houston businesses that trust DashEnd for reliable, fast, 
+          and transparent sourcing with local delivery.
+        </p>
+        <a href="contact.html" class="btn" style="background: white; color: var(--primary); padding: 18px 48px; font-size: 18px;">
+          <i class="fas fa-paper-plane"></i> Request Houston Quote
+        </a>
+        <p style="margin-top: 20px; opacity: 0.8; font-size: 14px;">
+          <i class="fas fa-phone-alt"></i> Need immediate help? Call (346) 606-9484
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="footer-logo">DASHEND</div>
+          <p class="footer-description">
+            Houston's trusted B2B partner for air filters, electronic components, and cleaning supplies. 
+            Fast local delivery, transparent pricing, and exceptional service across Greater Houston.
+          </p>
+          <div class="social-links">
+            <a href="mailto:infodashend@gmail.com" class="social-link" title="Email Us">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/dashend_supply/" target="_blank" class="social-link" title="Follow on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/+13466069484" target="_blank" class="social-link" title="Message on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-heading">Products</h3>
+          <div class="footer-links">
+            <!-- CORREGIDO: Quitados los enlaces de ancla #air, #electronics, #cleaning -->
+            <a href="catalog.html">Air Filters</a>
+            <a href="catalog.html">Electronic Components</a>
+            <a href="catalog.html">Cleaning Products</a>
+            <a href="catalog.html">Full Catalog</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-heading">Company</h3>
+          <div class="footer-links">
+            <!-- CORREGIDO: Quitados los enlaces de ancla #mission, #sustainability -->
+            <a href="about.html">About Us</a>
+            <a href="about.html">Mission & Values</a>
+            <a href="about.html">Sustainability</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-heading">Support</h3>
+          <div class="footer-links">
+            <!-- CORREGIDO: Quitados los enlaces de ancla #faq, #areas -->
+            <a href="contact.html">Request Quote</a>
+            <a href="contact.html">FAQ</a>
+            <a href="contact.html">Service Areas</a>
+            <a href="contact.html">Customer Service</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> DashEnd Supply LLC. Houston, Texas. All rights reserved.</p>
+        <!-- CORREGIDO: Eliminados Privacy Policy y Terms of Service -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+    
+    if (localStorage.getItem('theme') === 'dark' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+      themeIcon.className = 'fas fa-sun';
+    } else {
+      themeIcon.className = 'fas fa-moon';
+    }
+    
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.className = 'fas fa-sun';
+      } else {
+        localStorage.setItem('theme', 'light');
+        themeIcon.className = 'fas fa-moon';
+      }
+    });
+    
+    // Mobile Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.feature-card, .category-card, .stat-card, .business-type').forEach(el => {
+      observer.observe(el);
+    });
+    
+    // Animate stat numbers
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    const statObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const stat = entry.target;
+          const target = stat.textContent === '24h' ? 24 : 
+                        stat.textContent === 'Same-Day' ? 100 : 
+                        stat.textContent === '98%' ? 98 : 0;
+          
+          if (stat.textContent === 'Same-Day') {
+            // For text stats, just add a class for animation
+            stat.style.opacity = '0';
+            stat.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              stat.style.opacity = '1';
+              stat.style.transform = 'translateY(0)';
+              stat.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            }, 300);
+          } else {
+            // For number stats, count up
+            let current = 0;
+            const increment = target / 30;
+            const updateNumber = () => {
+              if (current < target) {
+                current += increment;
+                stat.textContent = Math.round(current) + (target === 98 ? '%' : 'h');
+                setTimeout(updateNumber, 50);
+              } else {
+                stat.textContent = target + (target === 98 ? '%' : 'h');
+              }
+            };
+            updateNumber();
+          }
+          statObserver.unobserve(stat);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    statNumbers.forEach(stat => {
+      statObserver.observe(stat);
+    });
+    
+    // Lazy loading for images
+    if ('loading' in HTMLImageElement.prototype) {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      images.forEach(img => {
+        img.src = img.dataset.src;
+      });
+    } else {
+      // Fallback for older browsers
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
